@@ -7,32 +7,92 @@
     <link rel="stylesheet" href="styles/versatile-ui.css" />
   </head>
   <body class="inter-font">
-    <header>
-      <nav class="navbar">
+    <header id="header">
+      <!-- navbar section html -->
+      <nav class="navbar display-flex">
         <h3 class="brand">Fitness</h3>
-        <ul class="nav-items">
-          <li class="nav-links"><a href="">Home</a></li>
+        <ul class="nav-items display-flex">
+          <li class="nav-links">
+            <a href=""><span class="home-page">Home</span></a>
+          </li>
           <li class="nav-links"><a href="">Service</a></li>
           <li class="nav-links"><a href="">Contact</a></li>
           <li class="nav-links"><a href="">About</a></li>
         </ul>
       </nav>
-      <section class="banner">
-        <div class="banner-content">
-          <h3 class="banner-title">Get body in shape & stay healthy</h3>
+      <!-- banner secton HTML -->
+      <section class="banner-container display-flex">
+        <div class="banner-content display-flex">
+          <h3 class="banner-title">
+            Get body in <span class="shape-text">shape</span> & stay healthy
+          </h3>
           <p class="banner-desc">
             A huge selection of health and fitness content, healthy recipes and
             transformation stories to help you get fit and stay fit!
           </p>
-          <div>
-            <button class="btn-primary">Join Club Now!</button>
-            <button class="btn-secondary">Download App</button>
+          <div class="buttons">
+            <button class="btn-primary inter-font">Join Club Now!</button>
+            <button class="btn-primary inter-font download-btn">
+              Download App
+            </button>
           </div>
+        </div>
+        <div class="banner-image">
+          <img src="./images/Images 2.png" alt="" />
         </div>
       </section>
     </header>
 
-    <main></main>
+    <main>
+      <section class="habits display-flex">
+        <h3 class="habit-title font-1">Change Your Habits</h3>
+        <p class="habit-desc font-2">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym.
+        </p>
+        <div class="habit-cards display-flex">
+          <div class="card">
+            <img src="./images/image 3.png" alt="" />
+            <h3 class="title">Movement</h3>
+            <p class="desc font-2">
+              We believe fitness should be accessible to everyone
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/image 2.png" alt="" />
+            <h3 class="title">Time</h3>
+            <p class="desc font-2">
+              We believe fitness should be accessible to everyone
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/image 4.png" alt="" />
+            <h3 class="title">Practice</h3>
+            <p class="desc font-2">
+              We believe fitness should be accessible to everyone
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/image 5.png" alt="" />
+            <h3 class="title">Weight Loss</h3>
+            <p class="desc font-2">
+              We believe fitness should be accessible to everyone
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- feature section HTML -->
+      <section class="feature">
+        <div class="feature-box">
+          <div class="feature-content">
+            <h3 class="title"></h3>
+            <p class="desc"></p>
+            <button class="btn-primary"></button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>

@@ -1,15 +1,159 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.cdnfonts.com/css/miama");
-/* font-family: 'Miama', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/* font-family: "Dancing Script", cursive; */
 
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: white;
 }
 
-* {
+body {
   background-color: rgb(17, 17, 17);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 /* shared style */
+.display-flex,
+.card {
+  display: flex;
+}
+
+.btn-primary {
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 16px 40px;
+  border-radius: 42px;
+  background-color: rgb(230, 83, 60);
+  margin-right: 14px;
+  border: none;
+}
+
+main section {
+  margin-top: 100px;
+}
+
+.font-1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+
+.font-2 {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* header section style */
+#header {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0.3) 100%
+  );
+  margin-bottom: 100px;
+}
+/* navbar style */
+.navbar {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.nav-items {
+  align-items: center;
+  gap: 47px;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.13rem;
+  padding: 12px 0;
+}
+.home-page {
+  font-weight: 600;
+  border-radius: 46px;
+  background-color: rgb(230, 83, 60);
+  padding: 12px 24px;
+}
+
+.brand {
+  color: rgb(230, 83, 60);
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+/* banner style */
+.banner-container {
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.banner-content {
+  flex-direction: column;
+  max-width: 520px;
+}
+.banner-title {
+  font-weight: 900;
+  font-size: 4.88rem;
+}
+.shape-text {
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  font-weight: 400;
+}
+.banner-desc {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 28px 0;
+}
+.download-btn {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* habit section style */
+.habits {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.habit-title {
+}
+.habit-desc {
+  margin-bottom: 55px;
+  max-width: 620px;
+  text-align: center;
+}
+.card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+  padding: 0 40px;
+}
+.card .desc {
+  max-width: 230px;
+}
+
+/* feature section */
