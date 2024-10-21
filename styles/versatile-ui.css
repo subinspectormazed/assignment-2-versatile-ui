@@ -134,8 +134,7 @@ main section {
   width: 80%;
   margin: auto;
 }
-.habit-title {
-}
+
 .habit-desc {
   margin-bottom: 55px;
   max-width: 620px;
@@ -157,3 +156,24 @@ main section {
 }
 
 /* feature section */
+.feature-box {
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+}
+.feature-content {
+  max-width: 445px;
+  padding: 41px 55px;
+}
+.feature-content .desc {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    line-height: 24px;
+}
+.feature-img {
+  border-radius: 18px;
+  margin: 30px 32px;
+}
