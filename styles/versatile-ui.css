@@ -83,6 +83,9 @@ main section {
   font-size: 1.13rem;
   padding: 12px 0;
 }
+.fa-solid {
+  display: none;
+}
 .home-page {
   font-weight: 600;
   border-radius: 46px;
@@ -184,11 +187,20 @@ main section {
 /* Media query style */
 
 @media screen and (max-width: 576px) {
+  .nav-links a {
+    display: none;
+  }
+  .fa-solid {
+    display: block;
+  }
+
   .habits,
   .habit-cards,
-  .feature-box {
+  .feature-box,
+  .banner-container {
     flex-direction: column;
   }
+
   .habits {
     text-align: center;
   }
