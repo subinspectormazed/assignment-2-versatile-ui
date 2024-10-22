@@ -53,7 +53,8 @@ main section {
   margin-bottom: 14px;
 }
 
-.font-2, td {
+.font-2,
+td {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -209,14 +210,15 @@ main section {
   flex-direction: column;
 }
 select {
-  color: #566C75;
+  color: #566c75;
 }
 .form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
-.form input, select {
+.form input,
+select {
   height: 24px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -237,7 +239,8 @@ select {
   margin-top: 30px;
 }
 
-.chart-title, .bmi-title {
+.chart-title,
+.bmi-title {
   font-size: 1.75rem;
 }
 .chart-title {
@@ -248,7 +251,9 @@ select {
   margin: 15px 0 35px 0;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid grey;
   border-collapse: collapse;
   padding: 15px 28px 15px 27px;
@@ -266,13 +271,19 @@ th {
   .habits,
   .habit-cards,
   .feature-box,
-  .banner-container, .calc-contents, .bmi-form {
+  .banner-container,
+  .calc-contents,
+  .bmi-form,
+  .calc-container {
     flex-direction: column;
   }
 
   .banner-container,
   .feature-box,
-  .navbar, .calc-contents, .bmi-form {
+  .navbar,
+  .calc-container,
+  .calc-contents,
+  .form {
     width: 90%;
   }
 
@@ -323,19 +334,22 @@ th {
   }
 
   .feature-content .title,
-  .habit-title {
+  .habit-title,
+  .title {
     font-size: 2rem;
   }
-
-  .feature-content .desc {
+  .desc {
     font-size: 14px;
+    max-width: 330px;
   }
   .feature-img-mobile {
     width: 85%;
     border-radius: 18px;
     margin-bottom: 33px;
   }
-  .chart-title, .bmi-title {
+  .chart-title,
+  .bmi-title {
     font-size: 1rem;
   }
+
 }
