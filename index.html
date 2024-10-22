@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Club</title>
     <link rel="stylesheet" href="styles/versatile-ui.css" />
-    <script src="https://kit.fontawesome.com/67d9c1e08d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/67d9c1e08d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="inter-font">
     <header id="header">
@@ -19,14 +22,17 @@
           <li class="nav-links"><a href="">Service</a></li>
           <li class="nav-links"><a href="">Contact</a></li>
           <li class="nav-links"><a href="">About</a></li>
-          <li class="nav-links"><a href=""></a><i class="fa-solid fa-bars"></i></li>
+          <li class="nav-links">
+            <a href=""></a><i class="fa-solid fa-bars"></i>
+          </li>
         </ul>
       </nav>
       <!-- banner secton HTML -->
       <section class="banner-container display-flex">
         <div class="banner-content display-flex">
           <h3 class="banner-title">
-            Get body in <br><span class="shape-text">shape</span> & stay <br>healthy
+            Get body in <br /><span class="shape-text">shape</span> & stay
+            <br />healthy
           </h3>
           <p class="banner-desc">
             A huge selection of health and fitness content, healthy recipes and
@@ -95,7 +101,7 @@
       <section class="feature">
         <div class="feature-box display-flex">
           <div class="feature-content">
-            <h3 class="title font-1">Run an Extra <br>Mile Easily</h3>
+            <h3 class="title font-1">Run an Extra <br />Mile Easily</h3>
             <p class="desc font-2">
               We believe fitness should be accessible to everyone, everywhere,
               regardless of income or access to a gym. With hundreds of
@@ -104,8 +110,77 @@
             <button class="btn-primary inter-font">Join Now</button>
             <button class="btn-primary inter-font mobile-btn">Join Now</button>
           </div>
-          <img class="feature-img" src="./images/run (2).jpg" alt="">
-          <img class="feature-img-mobile" src="./images/run.jpg" alt="">
+          <img class="feature-img" src="./images/run (2).jpg" alt="" />
+          <img class="feature-img-mobile" src="./images/run.jpg" alt="" />
+        </div>
+      </section>
+      <!-- BMI Calculator form -->
+      <section class="calc-container display-flex">
+        <div class="heading">
+          <h3 class="title font-1">BMI Calculator</h3>
+          <p class="desc font-2">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+
+        <div class="bg-color">
+          <div class="calc-contents display-flex">
+            <div class="chart">
+              <h3 class="chart-title">BMI Calculator Chart</h3>
+              <table class="table-data">
+                <tr>
+                  <th>BMI</th>
+                  <th>Weight Status</th>
+                </tr>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9</td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </table>
+            </div>
+            <div class="bmi-form display-flex">
+              <h3 class="bmi-title">Calculate your BMI</h3>
+              <p class="bmi-desc font-2">
+                We believe fitness should be accessible to everyone, everywhere,
+                regardless of income or access to a gym.
+              </p>
+              <form class="form">
+                <input type="number" name="" id="" placeholder="Height/cm" />
+                <input type="number" name="" id="" placeholder="Weight/kg" />
+                <input type="number" name="" id="" placeholder="Age" />
+                <select class="dropdown">
+                  <option value="0" disabled selected>Sex</option>
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+                <select id="selection" class="dropdown">
+                  <option value="1" disabled selected>
+                    Select an activity factor
+                  </option>
+                </select>
+              </form>
+              <div class="cal-button">
+                <button class="btn-primary inter-font">Calculate</button>
+              <button class="btn-primary inter-font mobile-btn">
+                Calculate
+              </button>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </section>
     </main>

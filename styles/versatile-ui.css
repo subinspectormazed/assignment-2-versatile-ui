@@ -53,7 +53,7 @@ main section {
   margin-bottom: 14px;
 }
 
-.font-2 {
+.font-2, td {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -185,6 +185,80 @@ main section {
   border-radius: 18px;
   margin: 30px 32px;
 }
+/* BMI calculator section style */
+.calc-container {
+  flex-direction: column;
+  margin: 120px auto;
+  align-items: center;
+}
+.heading {
+  max-width: 670px;
+  margin-bottom: 50px;
+}
+.bg-color {
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+}
+.calc-contents {
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 55px auto;
+}
+.bmi-form {
+  flex-direction: column;
+}
+select {
+  color: #566C75;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.form input, select {
+  height: 24px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 12px 20px;
+  color: antiquewhite;
+  font-size: 1rem;
+}
+
+select {
+  color: #757575;
+  height: 48px;
+}
+#selection {
+  grid-column: span 2;
+}
+.calc-contents button {
+  margin-top: 30px;
+}
+
+.chart-title, .bmi-title {
+  font-size: 1.75rem;
+}
+.chart-title {
+  margin-bottom: 55px;
+}
+.bmi-desc {
+  max-width: 577px;
+  margin: 15px 0 35px 0;
+}
+
+table, th, td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 15px 28px 15px 27px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+th {
+  font-weight: 500;
+}
 
 /* Media query style */
 
@@ -192,13 +266,13 @@ main section {
   .habits,
   .habit-cards,
   .feature-box,
-  .banner-container {
+  .banner-container, .calc-contents, .bmi-form {
     flex-direction: column;
   }
 
   .banner-container,
   .feature-box,
-  .navbar {
+  .navbar, .calc-contents, .bmi-form {
     width: 90%;
   }
 
@@ -260,5 +334,8 @@ main section {
     width: 85%;
     border-radius: 18px;
     margin-bottom: 33px;
+  }
+  .chart-title, .bmi-title {
+    font-size: 1rem;
   }
 }
