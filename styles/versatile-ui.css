@@ -54,7 +54,7 @@ main section {
 }
 
 .font-2,
-td {
+.mentor-details p {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -135,6 +135,46 @@ td {
   border-radius: 42px;
   background-color: rgba(0, 0, 0, 0.6);
 }
+.banner-image {
+  position: relative;
+}
+.tutorials,
+.workout {
+  position: absolute;
+  width: max-content;
+  color: white;
+  background-color: rgba(48, 48, 48, 0.54);
+  padding: 8px 23px;
+  border-radius: 10px;
+  top: 70%;
+  right: 70%;
+  align-items: center;
+}
+
+.workout {
+  top: 22%;
+  right: -30%;
+}
+.count {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: rgb(250, 250, 249);
+  margin: 15px 15px;
+}
+.count p {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+.circle {
+  background-color: rgb(230, 83, 60);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+}
+
 /* habit section style */
 .habits {
   flex-direction: column;
@@ -186,84 +226,98 @@ td {
   border-radius: 18px;
   margin: 30px 32px;
 }
-/* BMI calculator section style */
-.calc-container {
+
+/* team gallery section style starts here */
+.team-info {
   flex-direction: column;
-  margin: 120px auto;
+  max-width: 80%;
+  margin: 100px auto;
   align-items: center;
+  text-align: center;
 }
-.heading {
-  max-width: 670px;
-  margin-bottom: 50px;
+.team-info .desc {
+  max-width: 630px;
+  margin-bottom: 60px;
 }
-.bg-color {
-  width: 100%;
-  background-color: rgb(34, 34, 34);
-}
-.calc-contents {
-  width: 80%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 55px auto;
-}
-.bmi-form {
-  flex-direction: column;
-}
-select {
-  color: #566c75;
-}
-.form {
+.photo-gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-.form input,
-select {
-  height: 24px;
-  border-radius: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  padding: 12px 20px;
-  color: antiquewhite;
-  font-size: 1rem;
+  padding: 20px;
+  border-radius: 18px;
 }
-
-select {
-  color: #757575;
-  height: 48px;
+.photo-gallery img {
+  width: 326px;
+  height: 272px;
+  border-radius: 10px;
 }
-#selection {
-  grid-column: span 2;
+.mentor-details {
+  position: relative;
 }
-.calc-contents button {
-  margin-top: 30px;
-}
-
-.chart-title,
-.bmi-title {
-  font-size: 1.75rem;
-}
-.chart-title {
-  margin-bottom: 55px;
-}
-.bmi-desc {
-  max-width: 577px;
-  margin: 15px 0 35px 0;
-}
-
-table,
-th,
-td {
-  border: 1px solid grey;
-  border-collapse: collapse;
-  padding: 15px 28px 15px 27px;
+.name-rank {
+  position: absolute;
+  bottom: 5%;
   text-align: left;
-  margin-bottom: 20px;
+  left: 5%;
 }
 
-th {
-  font-weight: 500;
+.mentor-details h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
 }
+.mentor-details p {
+  margin-top: 5px;
+}
+
+/* team gallery section style ends here */
+
+/* footer section style starts here */
+.copyright {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.copyright p {
+  margin-top: 30px;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+hr {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-bg {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.section-1,
+.section-2 {
+  margin: 70px auto;
+  max-width: 40%;
+}
+
+.section-title {
+  font-size: 4.375rem;
+  font-weight: 800;
+  color: rgb(230, 83, 60);
+  margin-bottom: 25px;
+}
+
+.section-2 h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.section-2 p {
+  font-size: 1.44rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* footer section style ends here */
 
 /* Media query style */
 
@@ -272,19 +326,34 @@ th {
   .habit-cards,
   .feature-box,
   .banner-container,
-  .calc-contents,
-  .bmi-form,
-  .calc-container {
+  .all-items {
     flex-direction: column;
   }
 
   .banner-container,
   .feature-box,
-  .navbar,
-  .calc-container,
-  .calc-contents,
-  .form {
+  .navbar {
     width: 90%;
+  }
+
+  .tutorials {
+    top: 90%;
+    right: 55%;
+  }
+  .workout {
+    right: 2%;
+    top: 70%;
+  }
+  .count {
+    font-size: 1.125rem;
+    margin: 9px 9px;
+  }
+  .count p {
+    font-size: 12px;
+  }
+  .circle {
+    height: 30px;
+    width: 30px;
   }
 
   .banner-title,
@@ -335,21 +404,35 @@ th {
 
   .feature-content .title,
   .habit-title,
-  .title {
+  .team-info .title {
     font-size: 2rem;
   }
-  .desc {
+
+  .feature-content .desc {
     font-size: 14px;
-    max-width: 330px;
   }
   .feature-img-mobile {
     width: 85%;
     border-radius: 18px;
     margin-bottom: 33px;
   }
-  .chart-title,
-  .bmi-title {
-    font-size: 1rem;
+
+  .photo-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .section-1,
+  .section-2 {
+    margin: 45px 0 20px 7%;
+    max-width: 80%;
+  }
+  .circle {
+    position: relative;
+  }
+  .play-btn {
+    position: absolute;
+    top: 25%;
+    right: 25%;
   }
 
 }
